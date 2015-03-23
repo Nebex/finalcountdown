@@ -79,8 +79,6 @@ public class javaDoctor extends javax.swing.JFrame {
         Result10 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
         jComboBox3 = new javax.swing.JComboBox();
-        Result11 = new javax.swing.JLabel();
-        Result12 = new javax.swing.JLabel();
         Result8 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
 
@@ -145,13 +143,13 @@ public class javaDoctor extends javax.swing.JFrame {
         jPanel1.add(Result3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 154, 385, -1));
 
         fileCheck.setBackground(new java.awt.Color(255, 102, 255));
-        fileCheck.setText("check files existence\n");
+        fileCheck.setText("check files existence ");
         fileCheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fileCheckActionPerformed(evt);
             }
         });
-        jPanel1.add(fileCheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 184, -1, -1));
+        jPanel1.add(fileCheck, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, -1, -1));
 
         deleteFile.setBackground(new java.awt.Color(255, 0, 51));
         deleteFile.setText("Delete File");
@@ -188,13 +186,13 @@ public class javaDoctor extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, -1, -1));
 
         jButton3.setBackground(new java.awt.Color(255, 102, 51));
-        jButton3.setText("delete duplicate files in your main drive");
+        jButton3.setText("Trace IP");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, -1, -1));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 220, -1));
 
         Result7.setBackground(new java.awt.Color(0, 0, 0));
         Result7.setText(" Result");
@@ -222,7 +220,7 @@ public class javaDoctor extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 440, -1, -1));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, -1, -1));
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,7 +232,7 @@ public class javaDoctor extends javax.swing.JFrame {
         Result10.setBackground(new java.awt.Color(0, 0, 0));
         Result10.setText(" Result");
         Result10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
-        jPanel1.add(Result10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 385, -1));
+        jPanel1.add(Result10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 385, -1));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "c:\\\\", "e:\\\\" }));
             jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -251,16 +249,6 @@ public class javaDoctor extends javax.swing.JFrame {
                     }
                 });
                 jPanel1.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 251, -1, -1));
-
-                Result11.setBackground(new java.awt.Color(0, 0, 0));
-                Result11.setText(" Result");
-                Result11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
-                jPanel1.add(Result11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 385, -1));
-
-                Result12.setBackground(new java.awt.Color(0, 0, 0));
-                Result12.setText(" Result");
-                Result12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
-                jPanel1.add(Result12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 385, -1));
 
                 Result8.setBackground(new java.awt.Color(0, 0, 0));
                 Result8.setText(" Result");
@@ -287,20 +275,19 @@ public class javaDoctor extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addComponent(Result8, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(132, 132, 132)
+                                .addGap(135, 135, 135)
                                 .addComponent(jButton5)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 );
                 layout.setVerticalGroup(
                     layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
+                        .addContainerGap(7, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Result8)
-                        .addContainerGap())
+                        .addComponent(jButton5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Result8))
                 );
 
                 pack();
@@ -524,7 +511,55 @@ public class javaDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
- Result5.setText("running");
+ String s = null;
+ String ip = jTextField2.getText();
+        try {
+             
+       
+            Process p = Runtime.getRuntime().exec("ps -ef");
+             
+            BufferedReader stdInput = new BufferedReader(new
+                 InputStreamReader(p.getInputStream()));
+ 
+            BufferedReader stdError = new BufferedReader(new
+                 InputStreamReader(p.getErrorStream()));
+ 
+           
+            System.out.println("Here is the standard output of the command:\n");
+            while ((s = stdInput.readLine()) != null) {
+                System.out.println(s);
+            }
+             
+          
+            System.out.println("Here is the standard error of the command (if any):\n");
+            while ((s = stdError.readLine()) != null) {
+                System.out.println(s);
+            }
+             
+            System.exit(0);
+        }
+        catch (IOException e) {
+            System.out.println("exception happened - here's what I know: ");
+            e.printStackTrace();
+            System.exit(-1);
+        }
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  /* 
+        Result7.setText("running");
         String checksum = null;
         File[] roots = File.listRoots();
         try {
@@ -544,6 +579,7 @@ public class javaDoctor extends javax.swing.JFrame {
          Logger.getLogger(javaDoctor.class.getName()).log(Level.SEVERE, null, ex);
      }
         }
+        */
 //         String fileName = this.jTextField1.getText();
    /*   FileInputStream fis = new FileInputStream(File(fileName));
 String orgianl = org.apache.commons.codec.digest.DigestUtils.md5Hex(fis);
@@ -613,10 +649,6 @@ this.Result8.setText("finshed proccess");
       }
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
@@ -624,6 +656,10 @@ this.Result8.setText("finshed proccess");
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox3ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -783,8 +819,6 @@ public void find ( String path, String target ) {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Result1;
     private javax.swing.JLabel Result10;
-    private javax.swing.JLabel Result11;
-    private javax.swing.JLabel Result12;
     private javax.swing.JLabel Result2;
     private javax.swing.JLabel Result3;
     private javax.swing.JLabel Result4;
